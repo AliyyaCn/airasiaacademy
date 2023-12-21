@@ -3,4 +3,3 @@ streamlit
 pandas
 seaborn
 Scikit-learn
-numpy
