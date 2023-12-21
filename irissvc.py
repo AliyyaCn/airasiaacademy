@@ -30,10 +30,11 @@ data = sns.load_dataset('iris')
 X = data.drop(['species'],axis=1)
 Y = data.species.copy()
 
-prediction = modelGaussianIris.predict(df)
-prediction_proba = modelGaussianIris.predict_proba(df)
- 
 modelsvmc = pickle.load(open("Iris.h5", "rb"))
+
+prediction = modelsvmc.predict(df)
+prediction_proba = modelsvmc.predict_proba(df)
+
 
 st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
