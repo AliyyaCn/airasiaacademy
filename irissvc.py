@@ -36,8 +36,8 @@ modelsvmc = pickle.load(open("Iris.h5", "rb"))
 st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
 
-#st.subheader('Prediction')
-#st.write(prediction)
+st.subheader('Prediction')
+st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
